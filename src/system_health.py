@@ -417,4 +417,15 @@ class SystemHealth:
         # Security Health
         print("\n🛡️ SECURITY HEALTH:")
         security = health_report['security']
-        print(f"  Firewall:
+        print(f"  Firewall: {security['firewall_status']}")
+        print(f"  Root User: {'✅ Yes' if security['root_user'] else '❌ No'}")
+        print(f"  System Updates: {security['system_updates']}")
+        
+        # Overall Health
+        print("\n📊 OVERALL HEALTH:")
+        if health_report['overall_health']:
+            print("  ✅ SYSTEM IS HEALTHY - Ready for WiFi operations")
+        else:
+            print("  ❌ SYSTEM HAS ISSUES - Run repair operations first")
+        
+        print("="*60)
