@@ -1,0 +1,19 @@
+{
+    "wifi": {
+        "scan_timeout": 30,
+        "max_retries": 3,
+        "driver_auto_install": true
+    },
+    "logging": {
+        "level": "INFO",
+        "max_file_size": "10MB",
+        "backup_count": 5
+    },
+    "drivers": {
+        "preferred_sources": [
+            "kali_default",
+            "backports",
+            "manual"
+        ]
+    }
+}
