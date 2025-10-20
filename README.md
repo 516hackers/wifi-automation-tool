@@ -1,27 +1,17 @@
-Installation & Usage
+Installation Instructions:
 Create the project structure:
 
 bash
-mkdir wifi-automation-tool
+mkdir -p wifi-automation-tool/{src,drivers,logs,config,backups}
 cd wifi-automation-tool
-# Create all the files as shown above
-Make install script executable and run:
+Create all the files with the content above
+
+Make executable and install:
 
 bash
-chmod +x install.sh
+chmod +x install.sh recovery.sh main.py
 sudo ./install.sh
-Run the tool:
+Run the enhanced tool:
 
 bash
 sudo ./main.py
-Specific operations:
-
-bash
-# Only scan networks
-sudo ./main.py --scan-only
-
-# Only install drivers
-sudo ./main.py --install-drivers
-
-# Fix errors
-sudo ./main.py --fix-errors
