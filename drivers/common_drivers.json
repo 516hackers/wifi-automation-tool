@@ -1,0 +1,51 @@
+{
+    "atheros": {
+        "packages": ["firmware-atheros", "firmware-linux-nonfree"],
+        "modules": ["ath9k", "ath9k_common", "ath9k_hw", "ath10k_pci"],
+        "devices": ["Atheros", "AR93", "AR94", "AR95", "AR96", "QCA"],
+        "source_urls": [
+            "https://github.com/kvalo/ath10k-firmware",
+            "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git"
+        ]
+    },
+    "realtek": {
+        "packages": ["firmware-realtek", "firmware-linux-nonfree", "rtl8812au-dkms"],
+        "modules": ["rtl8192cu", "rtl8xxxu", "rt2800usb", "rtl8821ae", "rtl8723be"],
+        "devices": ["Realtek", "RTL81", "RTL82", "RTL87", "RTL88"],
+        "source_urls": [
+            "https://github.com/lwfinger/rtl8188eu",
+            "https://github.com/lwfinger/rtl8723bu",
+            "https://github.com/lwfinger/rtl8723de"
+        ]
+    },
+    "intel": {
+        "packages": ["firmware-iwlwifi", "firmware-linux"],
+        "modules": ["iwlwifi", "iwlmvm", "iwldvm"],
+        "devices": ["Intel", "Centrino", "Wireless-AC", "Wi-Fi 6"],
+        "source_urls": [
+            "https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git"
+        ]
+    },
+    "broadcom": {
+        "packages": ["firmware-brcm80211", "b43-fwcutter", "broadcom-sta-dkms"],
+        "modules": ["brcmsmac", "b43", "wl", "bcma"],
+        "devices": ["Broadcom", "BCM43", "BCM43"],
+        "source_urls": [
+            "http://linuxwireless.org/en/users/Drivers/b43"
+        ]
+    },
+    "ralink": {
+        "packages": ["firmware-ralink"],
+        "modules": ["rt2800pci", "rt2800usb", "rt2x00usb"],
+        "devices": ["Ralink", "RT2", "RT3"],
+        "source_urls": []
+    },
+    "mediatek": {
+        "packages": ["firmware-misc-nonfree"],
+        "modules": ["mt76x0u", "mt76x2u", "mt7601u"],
+        "devices": ["Mediatek", "MT76"],
+        "source_urls": [
+            "https://github.com/kvalo/mt76"
+        ]
+    }
+}
